@@ -78,15 +78,13 @@ class _LoginState extends State<Login> {
     return regExp.hasMatch(em);
   }
 
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      body: FormKeyboardActions(
-        keyboardActionsPlatform: KeyboardActionsPlatform.ALL, //optional
-        keyboardBarColor: Colors.grey[200], //optional
-        nextFocus: true, //optional
-        actions: [
-          KeyboardAction(
+  KeyboardActionsConfig _buildConfig(BuildContext context) {
+    return KeyboardActionsConfig(
+      keyboardActionsPlatform: KeyboardActionsPlatform.ALL,
+      keyboardBarColor: Colors.grey[200],
+      nextFocus: true,
+      actions: [
+        KeyboardAction(
             focusNode: _emailFocus,
             displayCloseWidget: true,
           ),
@@ -94,7 +92,15 @@ class _LoginState extends State<Login> {
             focusNode: _passwordFocus,
             displayCloseWidget: true,
           )
-        ],
+      ],
+    );
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      body: KeyboardActions(
+        config: _buildConfig(context),
         child: Center(
           child: SingleChildScrollView(
             child: Container(

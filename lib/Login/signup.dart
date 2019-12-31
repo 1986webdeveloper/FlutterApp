@@ -120,22 +120,13 @@ class _SignUpState extends State<SignUp> {
     return regExp.hasMatch(em);
   }
 
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-        appBar: AppBar(
-          title: Text("Sign up"),
-          iconTheme: IconThemeData(
-            color: Colors.white
-          ),
-          backgroundColor: Theme.of(context).primaryColor,
-        ),
-        body: FormKeyboardActions(
-        keyboardActionsPlatform: KeyboardActionsPlatform.ALL, //optional
-        keyboardBarColor: Colors.grey[200], //optional
-        nextFocus: true, //optional
-        actions: [
-          KeyboardAction(
+  KeyboardActionsConfig _buildConfig(BuildContext context) {
+    return KeyboardActionsConfig(
+      keyboardActionsPlatform: KeyboardActionsPlatform.ALL,
+      keyboardBarColor: Colors.grey[200],
+      nextFocus: true,
+      actions: [
+        KeyboardAction(
             focusNode: _firstNameFocus,
             displayCloseWidget: true,
           ),
@@ -159,7 +150,51 @@ class _SignUpState extends State<SignUp> {
             focusNode: _confirmPasswordFocus,
             displayCloseWidget: true,
           ),
-        ],
+      ],
+    );
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+        appBar: AppBar(
+          title: Text("Sign up"),
+          iconTheme: IconThemeData(
+            color: Colors.white
+          ),
+          backgroundColor: Theme.of(context).primaryColor,
+        ),
+        body: KeyboardActions(
+        // keyboardActionsPlatform: KeyboardActionsPlatform.ALL, //optional
+        // keyboardBarColor: Colors.grey[200], //optional
+        // nextFocus: true, //optional
+        // actions: [
+          // KeyboardAction(
+          //   focusNode: _firstNameFocus,
+          //   displayCloseWidget: true,
+          // ),
+          // KeyboardAction(
+          //   focusNode: _lastNameFocus,
+          //   displayCloseWidget: true,
+          // ),
+          // KeyboardAction(
+          //   focusNode: _emailAddressFocus,
+          //   displayCloseWidget: true,
+          // ),
+          // KeyboardAction(
+          //   focusNode: _mobileNumberFocus,
+          //   displayCloseWidget: true,
+          // ),
+          // KeyboardAction(
+          //   focusNode: _passwordFocus,
+          //   displayCloseWidget: true,
+          // ),
+          // KeyboardAction(
+          //   focusNode: _confirmPasswordFocus,
+          //   displayCloseWidget: true,
+          // ),
+        // ],
+        config: _buildConfig(context),
         child: Container(
           child: SingleChildScrollView(
             child: Container(
