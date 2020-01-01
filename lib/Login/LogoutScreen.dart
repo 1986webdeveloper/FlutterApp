@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:picture_on_map/constants.dart';
+import 'package:FlutterApp/constants.dart';
 
 class LogoutScreen extends StatelessWidget {
   @override

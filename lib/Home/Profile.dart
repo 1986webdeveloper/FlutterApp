@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:picture_on_map/Menu/MenuScreen.dart';
+import 'package:FlutterApp/Menu/MenuScreen.dart';
 class Profile extends StatefulWidget {
   @override
   _ProfileState createState() => _ProfileState();

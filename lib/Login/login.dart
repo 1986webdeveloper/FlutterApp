@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:keyboard_actions/keyboard_actions.dart';
 import 'dart:async';
-import 'package:picture_on_map/Model/loginModel.dart';
+import 'package:FlutterApp/Model/loginModel.dart';
 import 'package:fluttertoast/fluttertoast.dart';
-import 'package:picture_on_map/NetworkUtil.dart';
-import 'package:picture_on_map/constants.dart';
+import 'package:FlutterApp/NetworkUtil.dart';
+import 'package:FlutterApp/constants.dart';
 
 class Login extends StatefulWidget {
   @override
@@ -107,10 +107,10 @@ class _LoginState extends State<Login> {
               margin: EdgeInsets.fromLTRB(30, 50, 30, 50),
               child: Column(
                 children: <Widget>[
-                  Image.asset(
-                    'assets/bex-logo.png',
-                    width: 280,
-                    height: 128,
+                  Icon(
+                    Icons.verified_user,
+                    color: Colors.black38,
+                    size: 40,
                   ),
                   SizedBox(
                     height: 50,

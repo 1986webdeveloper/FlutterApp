@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:image_picker/image_picker.dart';
 import 'package:keyboard_actions/keyboard_actions.dart';
-import 'package:picture_on_map/Model/loginModel.dart';
-import 'package:picture_on_map/constants.dart';
-import 'package:picture_on_map/NetworkUtil.dart';
+import 'package:FlutterApp/Model/loginModel.dart';
+import 'package:FlutterApp/constants.dart';
+import 'package:FlutterApp/NetworkUtil.dart';
 import 'package:fluttertoast/fluttertoast.dart';
 
 import 'dart:async';

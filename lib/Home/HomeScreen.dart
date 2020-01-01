@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:google_maps_flutter/google_maps_flutter.dart';
-import 'package:picture_on_map/Menu/MenuScreen.dart';
+import 'package:FlutterApp/Menu/MenuScreen.dart';
 import 'package:location/location.dart';
 import 'package:flutter/services.dart';
 import 'dart:async';
-import 'package:picture_on_map/Model/PictureModel.dart';
-import 'package:picture_on_map/NetworkUtil.dart';
-import 'package:picture_on_map/constants.dart';
+import 'package:FlutterApp/Model/PictureModel.dart';
+import 'package:FlutterApp/NetworkUtil.dart';
+import 'package:FlutterApp/constants.dart';
 import 'package:fluttertoast/fluttertoast.dart';
 
 class HomeScreen extends StatefulWidget {

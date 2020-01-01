@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'menuCell.dart';
-import 'package:picture_on_map/constants.dart';
-import 'package:picture_on_map/Login/LogoutScreen.dart';
+import 'package:FlutterApp/constants.dart';
+import 'package:FlutterApp/Login/LogoutScreen.dart';
 
 class MenuScreen extends StatelessWidget {
   @override

@@ -1,4 +1,4 @@
-name: picture_on_map
+name: FlutterApp
 description: A new Flutter project.
 
 # The following defines the version and build number for your application.
@@ -50,7 +50,6 @@ flutter:
   - assets/key.png
   - assets/menu-home.png
   - assets/share.png
-  - assets/bex-logo.png
   #  - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see

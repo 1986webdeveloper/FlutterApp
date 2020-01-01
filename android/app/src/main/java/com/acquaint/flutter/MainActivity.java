@@ -1,4 +1,4 @@
-package com.example.pictureonmap;
+package com.acquaint.flutter;
 
 import android.os.Bundle;
 import io.flutter.app.FlutterActivity;
